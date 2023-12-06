@@ -1,0 +1,21 @@
+// base
+
+@import url(./base/_fonts.scss);
+@import url(./base/_reset.scss);
+@import url(./base/_general.scss);
+
+// utils
+
+@import url(./utils/_colors.scss);
+@import url(./utils/_mixins.scss);
+@import url(./utils/_placeholder.scss);
+@import url(./utils/_variable.scss);
+
+//components
+
+@import url(./components/_header.scss);
+@import url(./components/_footer.scss);
+@import url(./components/_work.scss);
+
+
+
