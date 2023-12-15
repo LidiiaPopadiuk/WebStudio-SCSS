@@ -1,0 +1,46 @@
+.work {
+    padding-bottom: 94px;
+    height: 480px;
+    &__list {
+        width: 370px;
+    height: 294px;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    } 
+    &__descr {
+        color: $color-texttwo;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    width: 370px;
+    height: 70px;
+    background: rgba(47, 48, 58, 0.8);
+    display: block;
+    padding: 27px 0;
+    position: absolute;
+    bottom: 0;
+    }
+    &__item {
+        position: relative;
+    }
+    &__title {
+        text-align: center;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 1.08px;
+    margin-bottom: 50px;
+    margin-top: 0;
+    color: $color-subtitle;
+    }
+}
+
+
+
+  
+ 
+

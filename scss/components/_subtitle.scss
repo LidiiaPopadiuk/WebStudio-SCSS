@@ -1,0 +1,115 @@
+.subtitle {
+    padding: 88px 0px 94px 0px;
+    &__item {
+        width: 270px;
+        &:nth-child(2) .fueatures__item--rectangule {
+          position: relative;
+          width: 100%;
+          height: 120px;
+          background: $color-people;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            background-image: url(../src/icon/clockone.svg);
+            width: 70px;
+            height: 70px;
+            background-size: contain;
+          }
+        }
+        &:nth-child(3) .fueatures__item--rectangule {
+          position: relative;
+          width: 100%;
+          height: 120px;
+          background: $color-people;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            background-image: url(../src/icon/diagramone.svg);
+            width: 70px;
+            height: 70px;
+            background-size: contain;
+          }
+        }
+        &:nth-child(4) .fueatures__item--rectangule {
+          position: relative;
+          width: 100%;
+          height: 120px;
+          background: $color-people;
+          &::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: block;
+            background-image: url(../src/icon/astronautone.svg);
+            width: 70px;
+            height: 70px;
+            background-size: contain;
+          }
+        }
+    }
+    &__list {
+        display: flex;
+        gap: 30px;
+        padding: 0; 
+    }
+    &__headline {
+        font-size: 14px;
+        margin: 30px 0 10px;
+    font-weight: 700;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+    color: $color-subtitle;
+    }
+    &__text {
+        font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.42px;
+    color: $color-text;
+    }
+}
+
+.fueatures__item--rectangule {
+  width: 100%;
+  height: 120px;
+  border-radius: 4px;
+  background: $color-people;
+  &::before {
+    content: "";
+  display: block;
+  background-image: url(../src/icon/antennaone.svg);
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+}
+
+
+
+ 
+  
+
+  
+
+
+  // .subtitle_item:nth-child(2) .fueatures_item-rectangule::before {
+  //   background-image: url(./svg/clockone.svg);
+  // }
+  
+  // .subtitle_item:nth-child(3) .fueatures_item-rectangule::before {
+  //   background-image: url(./svg/diagramone.svg);
+  // }
+  
+  // .subtitle_item:nth-child(4) .fueatures_item-rectangule::before {
+  //   background-image: url(./svg/astronautone.svg);
+  // }

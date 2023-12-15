@@ -1,0 +1,93 @@
+.header {
+  height: 80px;
+  &__link {
+    text-decoration: none;
+    position: relative;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    color: $color-subtitle;
+    transition: 0.5s;
+    &:hover {
+      transition: 1s 0.1s;
+      color: $color-span;
+    }
+    &::before {
+      content: "";
+      width: 100%;
+      height: 4px;
+      position: absolute;
+      border-radius: 2px;
+      background: $color-span;
+      bottom: -34px;
+      transition: 1s;
+      transform: rotateY(90deg);
+    }
+    &:hover {
+     &::before {
+      transform: rotate(0deg);
+
+     }
+    }
+    &--active {
+      color: $color-span;
+      &::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        position: absolute;
+        border-radius: 2px;
+        background: $color-span;
+        bottom: -34px;
+        transition: 1s 0.1s;
+      }
+    }
+  }
+  &__contact {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+    color: $color-text;
+    &:hover {
+      transition: 1s 0.1s;
+      color: $color-span;
+    }
+  }
+  &__div {
+    display: flex;
+    gap: 50px;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 93px;
+  }
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__slogan {
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: 700;
+    letter-spacing: 0.78px;
+    color: $color-span;
+  }
+  &__list {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    margin: 0;
+  }
+  &__logo {
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: 700;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.78px;
+    color: $color-header;
+  }
+}
