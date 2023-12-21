@@ -13,11 +13,15 @@
   }
   &__title {
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 700;
-    letter-spacing: 1.08px;
+    letter-spacing: 0.84px;
     margin: 0;
     color: $color-subtitle;
+    @media (min-width: 1200px) {
+      font-size: 36px;
+      letter-spacing: 1.08px;
+    }
   }
   &__name {
     text-align: center;
