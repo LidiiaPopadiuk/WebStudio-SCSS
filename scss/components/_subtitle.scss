@@ -1,7 +1,18 @@
 .subtitle {
     padding: 88px 0px 94px 0px;
     &__item {
-        width: 270px;
+          width: 100%;
+          
+          @media (min-width: 480px) {
+            width: 450px;
+          }
+          @media(min-width: 768px) {
+            width: 354px;
+          }
+        @media (min-width: 1200px) {
+          width: 270px;
+        }
+      
         &:nth-child(2) .fueatures__item--rectangule {
           position: relative;
           width: 100%;
@@ -61,14 +72,26 @@
         display: flex;
         gap: 30px;
         padding: 0; 
+        flex-wrap: wrap;
+        justify-content: center;
     }
     &__headline {
         font-size: 14px;
         margin: 30px 0 10px;
+
+    color: $color-subtitle;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: normal;
     font-weight: 700;
+    line-height: normal;
     letter-spacing: 0.42px;
     text-transform: uppercase;
-    color: $color-subtitle;
+@media (min-width: 768px) {
+    text-align: start;
+}
+
     }
     &__text {
         font-size: 14px;

@@ -1,5 +1,11 @@
 .header {
-  height: 80px;
+  height: 60px;
+  border: 1px solid $color-borderHeader;
+
+  @media (min-width:768px) {
+    height: 80px;
+  }
+
   &__link {
     text-decoration: none;
     position: relative;
@@ -45,7 +51,7 @@
   }
   &__contact {
     text-decoration: none;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.28px;
     color: $color-text;
@@ -53,17 +59,38 @@
       transition: 1s 0.1s;
       color: $color-span;
     }
+
+    @media (min-width: 1200px) {
+      font-size: 14px;
+    }
   }
   &__div {
-    display: flex;
-    gap: 50px;
+    display: none;
+    flex-wrap: wrap;
+
+    @media (min-width: 768px) {
+      display: flex;
+      gap: 10px;
+      width: 138px;
+     }
+     @media (min-width: 1200px) {
+      gap: 30px;
+      width: 333px;
+     }
+
   }
   &__wrapper {
     display: flex;
     align-items: center;
-    gap: 93px;
+    gap: 88px;
+
+    @media (min-width: 1200px) {
+      gap: 93px;
+    }
+
   }
   .container {
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -80,14 +107,36 @@
     justify-content: space-around;
     gap: 50px;
     margin: 0;
+    padding: 0;
   }
   &__logo {
-    font-size: 26px;
+    font-size: 24px;
     font-family: Raleway;
     font-weight: 700;
     font-style: normal;
     line-height: normal;
     letter-spacing: 0.78px;
     color: $color-header;
+
+    @media (min-width: 1200px) {
+      font-size: 26px;
+    }
+  }
+  &__nav {
+    display: none;
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+  &__hamburger {
+    border: none;
+    background-color: transparent;
+    font-size: 30px;
+    
+
+@media (min-width: 768px) {
+  display: none;
+}
+
   }
 }

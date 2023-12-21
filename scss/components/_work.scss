@@ -1,6 +1,10 @@
 .work {
     padding-bottom: 94px;
     height: 480px;
+    display: none;
+    @media (min-width: 1200px) {
+        display: block;
+    }
     &__list {
         width: 370px;
     height: 294px;
