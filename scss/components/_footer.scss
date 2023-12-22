@@ -1,12 +1,12 @@
 .footer {
   padding: 60px 0 60px 0;
-  height: 252px;
+  // height: 252px;
   background-color: $color-footer;
   &__wrapp {
     display: flex;
     gap: 12px;
     &--input {
-      width: 358px;
+      width: 450px;
       height: 50px;
       border-radius: 4px;
       border: 1px solid rgba(255, 255, 255, 0.3);
@@ -19,6 +19,9 @@
       line-height: 20px;
       letter-spacing: 0.48px;
       padding: 15px 16px;
+      @media (min-width: 1200px) {
+        width: 358px;
+      }
     }
     &--btn {
       color: #fff;
@@ -55,13 +58,17 @@
     color: $color-span;
   }
   &__text {
-    font-size: 26px;
+    font-size: 24px;
     font-family: Raleway;
     font-weight: 700;
-    letter-spacing: 0.78px;
+    letter-spacing: 0.72px;
     margin-bottom: 20px;
     margin-top: 0;
     color: $color-title;
+    @media (min-width: 1200px) {
+      font-size: 26px;
+      letter-spacing: 0.78px;
+    }
   }
   &__link {
     font-size: 14px;
