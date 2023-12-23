@@ -5,15 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
     <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/style.min.css" />
   </head>
   <body>
@@ -49,6 +49,25 @@
             11</a
           >
         </div>
+        <div class="mobile-menu">
+          <button class="mobile-menu__close">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <path
+                d="M29.6667 12.88L27.7867 11L20.3333 18.4533L12.88 11L11 12.88L18.4533 20.3333L11 27.7867L12.88 29.6667L20.3333 22.2133L27.7867 29.6667L29.6667 27.7867L22.2133 20.3333L29.6667 12.88Z"
+                fill="#212121"
+              />
+            </svg>
+          </button>
+          <ul class="mobile-menu__list">
+            
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -79,12 +98,7 @@
                   Телефон
                   <div class="modal__box">
                     <i class="fa-solid fa-phone"></i>
-                    <input
-                      class="modal__input"
-                      type="tel"
-                      name="tel"
-                  
-                    />
+                    <input class="modal__input" type="tel" name="tel" />
                   </div>
                 </label>
                 <label class="modal__label">
@@ -162,7 +176,11 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img class="work__img" src="./src/img/computer.jpg" alt="computer" />
+              <img
+                class="work__img"
+                src="./src/img/computer.jpg"
+                alt="computer"
+              />
               <span class="work__descr">Десктопні додатки</span>
             </li>
             <li class="work__item">
@@ -403,7 +421,11 @@
               </ul>
             </li>
             <li class="people__item" data-aos="zoom-in-down">
-              <img class="people__img" src="./src/img/Mukola.jpg" alt="Mukola" />
+              <img
+                class="people__img"
+                src="./src/img/Mukola.jpg"
+                alt="Mukola"
+              />
               <h3 class="people__name">Микола Тарасов</h3>
               <h4 class="people__desc">Marketing</h4>
               <ul class="people__item--list">
@@ -514,7 +536,11 @@
               </ul>
             </li>
             <li class="people__item" data-aos="zoom-in-down">
-              <img class="people__img" src="./src/img/Muxaylo.jpg" alt="Muxaylo" />
+              <img
+                class="people__img"
+                src="./src/img/Muxaylo.jpg"
+                alt="Muxaylo"
+              />
               <h3 class="people__name">Михайло Єрмаков</h3>
               <h4 class="people__desc">UI Designer</h4>
               <ul class="people__item--list">
@@ -569,7 +595,7 @@
                         </clipPath>
                       </defs></svg
                   ></a>
-                </li> 
+                </li>
                 <li class="people__item--item">
                   <a href="#" class="people__item--link"
                     ><svg
@@ -971,7 +997,7 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
           <div class="footer__title">
@@ -1010,12 +1036,13 @@
           </div>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script
       src="https://kit.fontawesome.com/a467e6a069.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/index.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
