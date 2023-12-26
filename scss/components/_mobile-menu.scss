@@ -1,4 +1,5 @@
 .mobile-menu {
+  padding: 48px 0 48px 40px;
   height: 100vh;
   width: 100%;
   background: $color-texttwo;
@@ -14,6 +15,15 @@
     top: 8px;
     border: none;
     background-color: $color-texttwo;
+  }
+  &__item {
+    color: $color-subtitle;
+font-family: Roboto;
+font-size: 40px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+letter-spacing: 0.8px;
   }
 }
 
