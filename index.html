@@ -66,20 +66,44 @@
           </button>
           <div class="mobile-menu__wrapper">
             <ul class="mobile-menu__list">
-              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Студія</a></li>
-              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Портфоліо</a></li>
-              <li class="mobile-menu__item"><a href="#" class="mobile-menu__link">Контакти</a></li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Студія</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Портфоліо</a>
+              </li>
+              <li class="mobile-menu__item">
+                <a href="#" class="mobile-menu__link">Контакти</a>
+              </li>
             </ul>
             <div class="mobile-menu__wrapp">
               <ul class="mobile-menu__info">
-                <li class="mobile-menu__tel"><a href="tel:+380961111111" class="mobile-menu__tellink">+38 096 111 11 11</a></li>
-                <li class="mobile-menu__gmail"><a href="mailto:info@devstudio.com" class="mobile-menu__gmaillink">info@devstudio.com</a></li>
+                <li class="mobile-menu__tel">
+                  <a href="tel:+380961111111" class="mobile-menu__tellink"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+                <li class="mobile-menu__gmail">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="mobile-menu__gmaillink"
+                    >info@devstudio.com</a
+                  >
+                </li>
               </ul>
               <ul class="mobile-menu__nav">
-                <li class="mobile-menu__navitem"><a href="#" class="mobile-menu__navlink">Instagram</a></li>
-                <li class="mobile-menu__navitem"><a href="#" class="mobile-menu__navlink">Twitter</a></li>
-                <li class="mobile-menu__navitem"><a href="#" class="mobile-menu__navlink">Facebook</a></li>
-                <li class="mobile-menu__navitem"><a href="#" class="mobile-menu__navlink">LinkedIn</a></li>
+                <li class="mobile-menu__navitem">
+                  <a href="#" class="mobile-menu__navlink">Instagram</a>
+                </li>
+                <li class="mobile-menu__navitem">
+                  <a href="#" class="mobile-menu__navlink">Twitter</a>
+                </li>
+                <li class="mobile-menu__navitem">
+                  <a href="#" class="mobile-menu__navlink">Facebook</a>
+                </li>
+                <li class="mobile-menu__navitem">
+                  <a href="#" class="mobile-menu__navlink">LinkedIn</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -192,19 +216,48 @@
           <h2 class="work__title">Чим ми займаємося</h2>
           <ul class="work__list">
             <li class="work__item">
-              <img
-                class="work__img"
-                src="./src/img/computer.jpg"
-                alt="computer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/computer1x.png 1x,
+                    ./src/img/computer2x.png 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="work__img"
+                  src="./src/img/computer1x.png"
+                  alt="computer"
+                />
+              </picture>
               <span class="work__descr">Десктопні додатки</span>
             </li>
             <li class="work__item">
-              <img class="work__img" src="./src/img/desine.jpg" alt="desin" />
+              <picture>
+                <source
+                  srcset="./src/img/design1x.png 1x, ./src/img/design2x.png 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="work__img"
+                  src="./src/img/design1x.png"
+                  alt="desin"
+                />
+              </picture>
               <span class="work__descr">Мобільні додатки</span>
             </li>
             <li class="work__item">
-              <img class="work__img" src="./src/img/colors.jpg" alt="colors" />
+              <picture>
+                <source
+                  srcset="./src/img/colors1x.png 1x, ./src/img/colors2x.png 2x"
+                  media="(min-width:1200px)"
+                />
+                <img
+                  class="work__img"
+                  src="./src/img/colors1x.png"
+                  alt="colors"
+                />
+              </picture>
               <span class="work__descr">Дизайнерські рішення</span>
             </li>
           </ul>
@@ -215,7 +268,31 @@
           <h2 class="people__title">Наша команда</h2>
           <ul class="people__list">
             <li class="people__item" data-aos="zoom-in-down">
-              <img class="people__img" src="./src/img/Igor.jpg" alt="Igor" />
+              <picture>
+                <source
+                  srcset="
+                    ./src/img/igor-desk1x.jpg 1x,
+                    ./src/img/igor-desk2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./src/img/igor-tablet1x.jpg 1x,
+                    ./src/img/igor-tablet2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="people__img"
+                  src="./src/img/igor-mobile1x.jpg"
+                  srcset="
+                    ./src/img/igor-mobile1x.jpg 1x,
+                    ./src/img/igor-mobile2x.jpg 2x
+                  "
+                  alt="Igor"
+                />
+              </picture>
               <h3 class="people__name">Ігор Дем'яненко</h3>
               <h4 class="people__desc">Product Designer</h4>
               <ul class="people__item--list">
@@ -326,7 +403,31 @@
               </ul>
             </li>
             <li class="people__item" data-aos="zoom-in-down">
-              <img class="people__img" src="./src/img/Olga.jpg" alt="Olga" />
+              <picture>
+                <source
+                  srcset="
+                  ./src/img/olga-desk1x.jpg 1x,
+                  ./src/img/olga-desk2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                  ./src/img/olga-tablet1x.jpg 1x,
+                  ./src/img/olga-tablet2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="people__img"
+                  src="./src/img/olga-mobile1x.jpg"
+                  srcset="
+                  ./src/img/olga-mobile1x.jpg 1x,
+                  ./src/img/olga-mobile2x.jpg 2x
+                  "
+                  alt="Olga"
+                />
+              </picture>
               <h3 class="people__name">Ольга Рєпіна</h3>
               <h4 class="people__desc">Frontend Developer</h4>
               <ul class="people__item--list">
@@ -437,11 +538,31 @@
               </ul>
             </li>
             <li class="people__item" data-aos="zoom-in-down">
-              <img
-                class="people__img"
-                src="./src/img/Mukola.jpg"
-                alt="Mukola"
-              />
+              <picture>
+                <source
+                  srcset="
+                  ./src/img/mukola-desk1x.jpg 1x,
+                  ./src/img/mukola-desk2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                  ./src/img/mukola-tablet1x.jpg 1x,
+                  ./src/img/mukola-tablet2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="people__img"
+                  src="./src/img/mukola-mobile1x.jpg"
+                  srcset="
+                  ./src/img/mukola-mobile1x.jpg 1x,
+                  ./src/img/mukola-mobile2x.jpg 2x
+                  "
+                  alt="Mukola"
+                />
+              </picture>
               <h3 class="people__name">Микола Тарасов</h3>
               <h4 class="people__desc">Marketing</h4>
               <ul class="people__item--list">
@@ -552,11 +673,31 @@
               </ul>
             </li>
             <li class="people__item" data-aos="zoom-in-down">
-              <img
-                class="people__img"
-                src="./src/img/Muxaylo.jpg"
-                alt="Muxaylo"
-              />
+              <picture>
+                <source
+                  srcset="
+                  ./src/img/muxaylo-desk1x.jpg 1x,
+                  ./src/img/muxaylo-desk2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                  ./src/img/muxaylo-tablet1x.jpg 1x,
+                  ./src/img/muxaylo-tablet2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <img
+                  class="people__img"
+                  src="./src/img/muxaylo-mobile1x.jpg"
+                  srcset="
+                  ./src/img/muxaylo-mobile1x.jpg 1x,
+                  ./src/img/muxaylo-mobile2x.jpg 2x
+                  "
+                  alt="Muxaylo"
+                />
+              </picture>
               <h3 class="people__name">Михайло Єрмаков</h3>
               <h4 class="people__desc">UI Designer</h4>
               <ul class="people__item--list">
@@ -1016,7 +1157,7 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__wrapper">
-          <div class="footer__title"> 
+          <div class="footer__title">
             <h2 class="footer__text">
               <span class="footer__slogan">Web</span>Studio
             </h2>
@@ -1030,24 +1171,48 @@
               <a class="footer__tel" href="mailto:info@devstudio.com"
                 >info@devstudio.com</a
               >
-              <a class="footer__tel" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="footer__tel" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
             </address>
           </div>
           <div class="footer__join">
             <h2 class="footer__join--title">приєднуйтесь</h2>
             <ul class="footer__join--list">
-              <li class="footer__join--item"><a href="#" class="footer__join--link"><i class="fa-brands fa-instagram"></i></a></li>
-              <li class="footer__join--item"><a href="#" class="footer__join--link"><i class="fa-brands fa-twitter"></i></a></li>
-              <li class="footer__join--item"><a href="#" class="footer__join--link"><i class="fa-brands fa-facebook-f"></i></a></li>
-              <li class="footer__join--item"><a href="#" class="footer__join--link"><i class="fa-brands fa-linkedin-in"></i></a></li>
+              <li class="footer__join--item">
+                <a href="#" class="footer__join--link"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
+              </li>
+              <li class="footer__join--item">
+                <a href="#" class="footer__join--link"
+                  ><i class="fa-brands fa-twitter"></i
+                ></a>
+              </li>
+              <li class="footer__join--item">
+                <a href="#" class="footer__join--link"
+                  ><i class="fa-brands fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="footer__join--item">
+                <a href="#" class="footer__join--link"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+              </li>
             </ul>
           </div>
           <div class="footer__follow">
             <h2 class="footer__follow--title">Підпишіться на розсилку</h2>
             <div class="footer__wrapp">
-              <input class="footer__wrapp--input" placeholder="E-mail" type="email" name="email">
+              <input
+                class="footer__wrapp--input"
+                placeholder="E-mail"
+                type="email"
+                name="email"
+              />
               <button class="footer__wrapp--btn">
-                Підписатися<i class="fa-solid fa-paper-plane"></i></button>
+                Підписатися<i class="fa-solid fa-paper-plane"></i>
+              </button>
             </div>
           </div>
         </div>
